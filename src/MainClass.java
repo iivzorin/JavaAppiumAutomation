@@ -4,4 +4,10 @@ public class MainClass {
         System.out.println(number);
         return number;
     }
+
+    private int class_number = 20;
+
+    public int getClassNumber() {
+        return class_number;
+    }
 }

@@ -16,4 +16,12 @@ public class MainClassTest extends MainClass {
         int result = mainClass.getClassNumber();
         assertTrue("Ошибка: метод getClassNumber должен возвращать число больше 45", result > 45);
     }
+
+    @Test
+    public void testGetClassString() {
+        MainClass mainClass = new MainClass();
+        String result = mainClass.getClassString();
+
+        assertTrue("Ошибка: метод getClassString не содержит подстроки 'hello' или 'Hello'", result.toLowerCase().contains("hello"));
+    }
 }
